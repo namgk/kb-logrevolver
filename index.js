@@ -7,7 +7,7 @@ function revolveLog(){
 	try {
 		var stats = fs.statSync(process.argv[2]);
 		var fileSizeInBytes = stats["size"];
-		if (fileSizeInBytes >= 1000*5){//5MB
+		if (fileSizeInBytes >= 1000000*5){//5MB
 			var date = new Date();
 		  var year = date.getFullYear();
 		  var month = date.getMonth() + 1;
